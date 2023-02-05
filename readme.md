@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # Semestre I - NodeJS
 
 ## Intro
