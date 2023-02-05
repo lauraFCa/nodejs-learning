@@ -1,0 +1,50 @@
+<div class="calculadora">
+    <form id="formNotas" onSubmit="return trata()" action="/resp" method="post">
+        <div class="campo">
+            <label for="nota1">Nota 01:</label>
+            <input type="number" id="nota1" name="nota1" placeholder="Nota 01">
+            <div id="msg1"></div>
+        </div>
+        <div class="campo">
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" name="nota2" placeholder="Nota 02">
+            <div id="msg2"></div>
+        </div>
+        <button id="calcSubmit" type="submit" value="Submit">Ok</button>
+    </form>
+    <button class="voltar" onclick="location.href='<%- pagina; %>'">Voltar</button>
+
+
+    <script>
+        let botaoOK = document.getElementById("calcSubmit");
+        function pressedOk() {
+            botaoOK.style.backgroundColor = "red"
+            botaoOK.style.color = "black"
+        }
+        //nao consegui declarar como arrow function
+        botaoOK.addEventListener('click', event => {
+            pressedOk();
+        });
+
+        var trata = () => {
+            var cp1 = document.querySelector("#nota1")
+            var cp2 = document.querySelector("#nota2")
+            var msg1 = document.querySelector("#msg1")
+            var msg2 = document.querySelector("#msg2")
+
+            if (cp1.value == "" || cp2.value == "") {
+                if (cp1.value == "") {
+                    msg1.innerText = "Informe um valor para o campo Nota 01"
+                    msg1.style.display = "block"
+                }
+                if (cp2.value == "") {
+                    msg2.innerText = "Informe um valor para o campo Nota 02"
+                    msg2.style.display = "block"
+                }
+                return false
+            } else {
+                return true
+            }
+        }
+    </script>
+</div>
