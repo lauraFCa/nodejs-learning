@@ -113,7 +113,6 @@ Utilizar inicialmente apenas os GET (definição dos caminhos da URL).
 
 ![Diagrama com funcoes do Express](imgs/express01.png)
 
-//TODO [Learn Express](https://youtu.be/JlgKybraoy4)
 
 ## Páginas Dinâmicas
 
