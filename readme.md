@@ -1,4 +1,4 @@
-# Semestre I - NodeJS
+# NodeJS aprendido com Grupo de Estudos do UniAcademia
 
 ## Intro
 
@@ -82,13 +82,7 @@ Se forem carregados dois arquivos de script o browser considera como um só (une
 - Criar classe
   Na classe crio atributos (variaveis), métodos e importo a classe para usar as variaveis
 
-# Semestre II
-
-1° Semestre: Sintaxe e linguagens  
-2° Semestre: Estudar as tecnologias que o Node usa.
-
-- Desenvolver na parte Web
-- Criação de Serviços
+---
 
 **Front-End**: HTML, CSS, JS  
 **Back-End**: Gerar páginas dinâmicas - Node  
